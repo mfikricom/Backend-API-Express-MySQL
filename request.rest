@@ -1,15 +1,15 @@
 GET http://localhost:5000/users
 
 ###
-GET http://localhost:5000/users/1
+GET http://localhost:5000/users/2
 
 ###
 POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "John Doe",
-    "email": "john@gmail.com",
+    "name": "Rai Paramartha",
+    "email": "rai@gmail.com",
     "gender": "Male"
 }
 
@@ -25,3 +25,25 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:5000/users/2
+
+###
+
+GET http://localhost:5000/posts
+Content-Type: application/json
+
+{
+    "post": "i luv rai",
+    "user_id": 1,
+    "likes": 0
+}
+
+###
+
+POST http://localhost:5000/posts
+Content-Type: application/json
+
+{
+    "post": "i luv jes",
+    "user_id": 2,
+    "likes": 0
+}
