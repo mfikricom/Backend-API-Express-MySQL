@@ -9,7 +9,8 @@ import {
 
 import {
     getPosts,
-    createPost
+    createPost,
+    getPostsWithUserName
 } from "../controllers/PostController.js";
 
 const router = express.Router();
@@ -20,6 +21,7 @@ router.post('/users', createUser);
 router.patch('/users/:id', updateUser);
 router.delete('/users/:id', deleteUser);
 router.get('/posts', getPosts);
+router.get('/postsWithName', getPostsWithUserName);
 router.post('/posts', createPost);
 
 export default router;

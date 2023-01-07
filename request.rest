@@ -31,11 +31,6 @@ DELETE http://localhost:5000/users/2
 GET http://localhost:5000/posts
 Content-Type: application/json
 
-{
-    "post": "i luv rai",
-    "user_id": 1,
-    "likes": 0
-}
 
 ###
 
@@ -47,3 +42,11 @@ Content-Type: application/json
     "user_id": 2,
     "likes": 0
 }
+
+###
+
+GET http://localhost:5000/postsWithName
+Content-Type: application/json
+
+
+###
